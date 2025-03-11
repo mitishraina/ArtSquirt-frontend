@@ -19,3 +19,47 @@
   background-color: #666e75;
   border-radius: 5px;
 }
+
+.blue-glassmorphism {
+  background: rgba(24, 25, 30, 0.4);
+  border-radius: 14px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.white-glassmorphism {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.gradient-bg {
+  background-color: #cbcbcbdb;
+  background-image: radial-gradient(
+      at 0% 0%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 40% 0%, #ffa371 0, transparent 50%),
+    radial-gradient(at 50% 0%, rgb(0, 0, 0) 0, transparent 20%),
+    radial-gradient(at 100% 0%, #ffa391 0, transparent 50%);
+}
+
+.bg-body {
+  background-color: #cbcbcbdb;
+  background-image: radial-gradient(
+      at 83% 67%,
+      rgb(0, 0, 0) 0,
+      transparent 58%
+    ),
+    radial-gradient(at 67% 20%, #cbcbcbdb 0, transparent 49%),
+    radial-gradient(at 88% 35%, rgb(255, 255, 255) 0, transparent 50%),
+    radial-gradient(at 31% 91%, rgb(0, 0, 0) 0, transparent 52%),
+    radial-gradient(at 27% 71%, #ffa371 0, transparent 49%),
+    radial-gradient(at 74% 89%, rgb(255, 255, 255) 0, transparent 51%),
+    radial-gradient(at 53% 75%, #ffa371 0, transparent 45%);
+}
