@@ -15,8 +15,28 @@ const CreatePost = () => {
     const [generatingImg, setGeneratingImg] = useState(false);
     const [loading, setLoading] = useState(false);
 
-    const handleSubmit = () => {
-
+    const handleSubmit = async(e) => {
+        e.preventDefault();
+        if (form.prompt && form.photo) {
+            setLoading(true);
+            try {
+                const response = await fetch ('http://localhost:3000/api/v1/posts', {
+                    method: 'POST',
+                    headers: {
+                        'Content-type': 'application/json',
+                    },
+                    body: JSON.stringify(form), 
+                })
+                await response.json();
+                navigate('/');
+            } catch (error) {
+                alert(error);              
+            } finally {
+                setLoading(false);
+            }
+        } else {
+            alert('Please provide a prompt and an image');
+        }
     }
 
     const handleChange = (e) => {
@@ -28,8 +48,27 @@ const CreatePost = () => {
         setForm({ ...form, prompt: randomPrompt })
     }
 
-    const generateImage = () => {
-        
+    const generateImage = async () => {
+        if (form.prompt){
+            try {
+                setGeneratingImg(true);
+                const response = await fetch('http://localhost:3000/api/v1/artSquirt', {
+                    method: 'POST',
+                    headers: {
+                        'Content-type': 'application/json',
+                    },
+                    body: JSON.stringify({ prompt: form.prompt }),
+                })
+                const data = await response.json();
+                setForm({ ...form, photo: `data:image/jpeg;base64,${data.art}`})
+            } catch (error) {
+                alert(error);
+            } finally {
+                setGeneratingImg(false);
+            }
+        } else {
+            alert('Please provide a prompt');
+        }
     }
 
 
