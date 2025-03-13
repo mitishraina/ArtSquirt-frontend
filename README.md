@@ -17,7 +17,7 @@ ArtSquirt is an innovative AI-powered image generation platform that allows user
 - **Tailwind CSS** - Utility-first CSS framework
 - **React Router** - Client-side routing
 - **File Saver** - File download functionality
-- **Motion** - Animation library
+- **Motion/Framer** - Animation library
 - **ESLint** - Code linting and formatting
 
 ## 🛠️ Installation & Setup
