@@ -1,3 +1,5 @@
+### Note: Few issues with deployment link. Click on logo on top for home page.
+
 # ArtSquirt - AI Image Generation Platform (Frontend)
 
 ArtSquirt is an innovative AI-powered image generation platform that allows users to create, share, and explore AI-generated artwork.
