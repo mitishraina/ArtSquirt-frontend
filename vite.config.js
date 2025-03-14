@@ -7,5 +7,5 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(),
   ],
-  base: '/ArtSquirt',
+  base: '/ArtSquirt-frontend',
 })
