@@ -10,7 +10,7 @@ function AppContent() {
   return (
     <>
       <header className="w-full flex justify-between items-center gradient-bg sm:px-8 px-4 py-4">
-        <Link to="/ArtSquirt-frontend/">
+        <Link to="/ArtSquirt/">
           <motion.img
             src={logo}
             alt="logo"
@@ -25,7 +25,7 @@ function AppContent() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}>
           <Link
-            to="/ArtSquirt-frontend/create-post"
+            to="/ArtSquirt/create-post"
             className="font-inter font-medium bg-[#ffa371] text-white px-4 py-2 rounded-md blue-glassmorphism"
           >
             Create Post
@@ -42,8 +42,8 @@ function AppContent() {
           transition={{ duration: 0.5 }}
         >
           <Routes location={location}>
-            <Route path="/ArtSquirt-frontend/" element={<Home />} />
-            <Route path="/ArtSquirt-frontend/create-post" element={<CreatePost />} />
+            <Route path="/ArtSquirt/" element={<Home />} />
+            <Route path="/ArtSquirt/create-post" element={<CreatePost />} />
           </Routes>
         </motion.div>
       </main>
