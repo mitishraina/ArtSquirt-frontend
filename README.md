@@ -1,5 +1,7 @@
 ### Note: Few issues with deployment link. Click on logo on top/navbar for home page.
 
+For backend architecture: https://github.com/mitishraina/ArtSquirt
+
 # ArtSquirt - AI Image Generation Platform (Frontend)
 
 ArtSquirt is an innovative AI-powered image generation platform that allows users to create, share, and explore AI-generated artwork.
