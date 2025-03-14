@@ -10,7 +10,7 @@ function AppContent() {
   return (
     <>
       <header className="w-full flex justify-between items-center gradient-bg sm:px-8 px-4 py-4">
-        <Link to="/ArtSquirt/">
+        <Link to="/ArtSquirt-frontend/">
           <motion.img
             src={logo}
             alt="logo"
@@ -42,7 +42,7 @@ function AppContent() {
           transition={{ duration: 0.5 }}
         >
           <Routes location={location}>
-            <Route path="/ArtSquirt/" element={<Home />} />
+            <Route path="/ArtSquirt-frontend/" element={<Home />} />
             <Route path="/ArtSquirt/create-post" element={<CreatePost />} />
           </Routes>
         </motion.div>
