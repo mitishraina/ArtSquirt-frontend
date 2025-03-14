@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
-@plugin "tailwindcss-animate";
+/* @plugin "tailwindcss-animate";
 
-@custom-variant dark (&:is(.dark *));
+@custom-variant dark (&:is(.dark *)); */
 
 * {
   font-family: 'Inter', sans-serif;
@@ -154,7 +154,7 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
-
+/* 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -200,4 +200,4 @@
   body {
     @apply bg-background text-foreground;
   }
-}
+} */
