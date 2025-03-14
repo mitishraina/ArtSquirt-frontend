@@ -1,4 +1,4 @@
-### Note: Few issues with deployment link. Click on logo on top for home page.
+### Note: Few issues with deployment link. Click on logo on top/navbar for home page.
 
 # ArtSquirt - AI Image Generation Platform (Frontend)
 
