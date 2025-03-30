@@ -1,5 +1,3 @@
-### Note: Few issues with deployment link. Click on logo on top/navbar for home page.
-
 For backend architecture: https://github.com/mitishraina/ArtSquirt
 
 # ArtSquirt - AI Image Generation Platform (Frontend)
